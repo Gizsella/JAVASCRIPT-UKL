@@ -1,0 +1,53 @@
+JavaScript
+<script>
+
+    function tambah(){
+     var a1=parseInt(document.kalkulator.a1.value)
+     var a2=parseInt(document.kalkulator.a2.value)
+     var hasil = a1+a2;
+     document.kalkulator.hasil.value=hasil;
+    }
+
+    function kurang(){
+     var a1=parseInt(document.kalkulator.a1.value)
+     var a2=parseInt(document.kalkulator.a2.value)
+     var hasil = a1-a2;
+     document.kalkulator.hasil.value=hasil;
+    }
+
+    function kali(){
+     var a1=parseInt(document.kalkulator.a1.value)
+     var a2=parseInt(document.kalkulator.a2.value)
+     var hasil = a1*a2; 
+     document.kalkulator.hasil.value=hasil;
+    }
+
+    function bagi(){
+     var a1=parseInt(document.kalkulator.a1.value)
+     var a2=parseInt(document.kalkulator.a2.value)
+     var hasil = a1/a2;
+     document.kalkulator.hasil.value=hasil;
+    }
+
+</script>
+
+HTML
+<body>
+
+    <form name="kalkulator">
+     <p>angka 1 <input type="number" name="a1"></p>
+     <p>angka 2 <input type="number" name="a2"></p>
+     <p>hasil <input type="number" name="hasil"></p>
+    </form>
+
+    <table>
+    <tr>
+    <td colspan="3" align="center">    
+    <input type="button" onclick="tambah()" value=" + "> 
+    <input type="button" onclick="kurang()" value=" - "> 
+    <input type="button" onclick="kali()" value=" * "> 
+    <input type="button" onclick="bagi()" value=" : ">   
+    </tr>   
+    </td>
+   </table>
+</body>
